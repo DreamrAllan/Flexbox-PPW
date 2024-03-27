@@ -1,0 +1,175 @@
+/* Mengatur properti dasar untuk seluruh halaman web */
+body {
+  /* Warna latar belakang halaman. */
+    background-color: hsl(210, 46%, 95%);
+    /* Ukuran font teks di halaman. */
+    font-size: 13px;
+    /* Jenis font yang digunakan. */
+    font-family: 'Manrope', sans-serif;
+    padding: 0px; /* Jarak sejajar kiri, kanan, dan bawah */
+    /* margin dan padding menjadi nol tanpa memperdulikan aturan lain yang mungkin didefinisikan sebelumnya */
+    margin: 0 !important;
+    padding: 0 !important;
+    /* tinggi halaman */
+    height: 100vh;
+    /* jenis tata letak halaman menggunnakan tipe flex memungkinkan pengaturan tata letak (layout) yang lebih fleksibel dan responsif dalam mendistribusikan ruang dan menata elemen-elemen di dalamnya.*/
+    display: flex;
+    /* Penataan konten secara horizontal yang diatur berada di tengah  */
+    justify-content: center;
+    /* Penataan konten secara vertikal yang diatur berada di tengah  */
+    align-items: center;
+  }
+/* Mengatur properti-properti untuk wadah konten utama */
+  .container {
+    width: 900px; /* Lebar maksimum untuk desktop */
+    /* Jarak antara kontainer dengan tepi halaman */
+    margin: 0 auto;
+    padding: 0; /* Jarak sejajar kiri, kanan, dan bawah */
+    /* Warna latar belakang kontainer berwarna putih */
+    background-color:white;
+    /* membuat  sudut kontainer dengan ukuran 10px */
+    border-radius: 10px;
+    /* jenis tata letak halaman menggunnakan tipe flex memungkinkan pengaturan tata letak (layout) yang lebih fleksibel dan responsif dalam mendistribusikan ruang dan menata elemen-elemen di dalamnya.*/
+    display: flex;
+    /* membuat tata letak yang rapi dan seimbang */
+    justify-content: space-between;
+    /* konten yang melebihi batas elemen tersebut akan disembunyikan atau dipotong sehingga tidak terlihat oleh pengguna */
+    overflow: hidden;
+    /* elemen-elemen di dalam kontainer flex akan ditata dalam satu baris secara horizontal, mulai dari kiri ke kanan. */
+    flex-direction: row;
+  }
+/* Mengatur properti-properti untuk kartu artikel */
+  .card {
+    margin: 10px; /* Jarak antara img dan card content */
+    /* jarak antara card content dengan isi card content dengan ukuran 25px */
+    padding: 25px;
+  }
+/* Mengatur properti-properti untuk konten artikel. */
+  .content {
+    /* warna konten */
+    color: hsl(214, 17%, 51%);
+  }
+  /* mengatur heading yang pada pada class konten */
+  .content h1 {
+    /* warna konten */
+    color: hsl(217, 19%, 35%);
+    /* ketebalan font judul artikel dengan 700 */
+    font-weight: 700;
+  }
+  /* mengatur paragraf yang ada pada kelas konten */
+  .content p {
+    /* Ketebalan font judul artikel denganukuran 500 */
+    font-weight: 500;
+    /* Jarak antara huruf dalam teks dengan ukuran 1 pixel */
+    letter-spacing: 1px;
+    /* Tinggi baris teks dngan ukuran 20px*/
+    line-height: 20px;
+    /* Ukuran font teks dengan ukuran 15px */
+    font-size: 15px;
+  }
+  /* Mengatur properti-properti untuk gambar utama. */
+  .img {
+    /* ukuran lebar gambar 100% */
+    width: 100%;
+    /* mengatur cara gambar dalam elemen ditampilkan dan menyesuaikan diri dengan ukuran elemen tersebut */
+    object-fit: cover;
+    /* menentukan perilaku tata letak elemen, terutama saat ingin mengontrol dimensi dan posisi elemen dalam kontainer. */
+    display: block;
+  }
+  /* Mengatur properti-properti untuk informasi profil penulis. */
+  .profile {
+    /* jenis tata letak halaman menggunnakan tipe flex memungkinkan pengaturan tata letak (layout) yang lebih fleksibel dan responsif dalam mendistribusikan ruang dan menata elemen-elemen di dalamnya.*/
+    display: flex;
+    /* Penataan konten secara vertikal diletakkan di tengah */
+    align-items: center;
+    /* Jarak antara elemen-elemen dalam grup dengan ukuran 10px */
+    gap: 10px;
+    /* tinggi elemen mengikuti lebarnya */
+    height: auto;
+    /* warna teks informasi profile */
+    color: hsl(217, 19%, 35%);
+  }
+  /* Mengatur properti-properti untuk informasi penulis artikel. */
+  .info {
+    /* elemen-elemen di dalam kontainer flex ditata dalam satu baris secara horizontal */
+    flex-direction: row;
+    /* mengatur tinggi baris teks di dalam suatu elemen */
+    line-height: 4px;
+    /*  mengatur jarak (margin) sebelah kiri suatu elemen dengan uluran 10px */
+    margin-left: 10px;
+  }
+  /* Mengatur properti-properti untuk informasi penulis artikel. */
+  .info p {
+    /* mengatur ketebalan font sebesar 500 */
+    font-weight: 500;
+    /* memnentukan warna font pada bagian paragraf */
+    color: hsl(214, 17%, 51%)
+  }
+  /* Mengatur properti-properti untuk gambar profil penulis. */
+  .fotoProfile {
+    /* membuat gaya pada sudut gambar sebesar 50% */
+    border-radius: 50%;
+    /* mengatur width dan height sebesa5 45px */
+    width: 45px;
+    height: 45px;
+  }
+  /* Mengatur properti-properti untuk tombol berbagi artikel. */
+  .share {
+    /* Mengatur warna latar belakang tombol. */
+    background-color: hsl(210, 46%, 95%);
+    /* membuat gaya pada sudut gambar sebesar 100% */
+    border-radius: 100%;
+    /* mengatur width dan height sebesa5 35px */
+    width: 35px;
+    height: 35px;
+    /* Jarak kiri tombol dari elemen lain. */
+    margin-left: auto;
+    /* Jarak kanan tombol dari elemen lain. */
+    margin-right:20px;
+    /* jenis tata letak halaman menggunnakan tipe flex memungkinkan pengaturan tata letak (layout) yang lebih fleksibel dan responsif dalam mendistribusikan ruang dan menata elemen-elemen di dalamnya.*/
+    display: flex;
+    /* Penataan konten secara vertikal berada di tengah */
+    align-items: center;
+    /* Penataan konten secara horizontal berada di tengah */
+    justify-content: center;
+  }
+  /* mengatur gambar pada kelas background */
+  .background img {
+    /* lebar img sebesar 10px */
+    width: 18px;
+  }
+  /* Mendefinisikan aturan CSS yang hanya akan diterapkan ketika lebar layar kurang dari atau sama dengan 500 piksel untuk tampilan mobile */
+  @media screen and (max-width: 500px){
+    /* Aturan untuk elemen dengan kelas  */
+    .container {
+      width: 80%;
+      display: block;
+      flex-direction: column;
+    }
+    /* Aturan untuk elemen dengan kelas dengan menetapkan jarak padding sebesar 10px */
+    .card {
+      padding: 10px;
+    }
+    /* mengubah elemen font size dan mengatur tinggi baris pada judul di kelas content */
+    .content h1 {
+      font-size: 16px;
+      line-height: 20px;
+    }
+    /* mengatur font size pada paragraf di kelas konten */
+    .content p {
+      font-size: 13px;
+    }
+    /* mengatur tinggi baris pada kelas info sebesar 7px */
+    .info {
+      line-height: 7px;
+    }
+    /* mengatur ukuran font size pada judul h2 di kelas info */
+    .info h2 {
+      font-size: 14px;
+    }
+    /* mengatur ukuran font size pada paragraf di kelas info */
+    .info p {
+      font-size: 13px;
+    }
+  } 
+    
